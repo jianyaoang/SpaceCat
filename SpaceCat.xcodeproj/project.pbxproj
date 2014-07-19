@@ -24,6 +24,7 @@
 		41E8626A197AEA54002C6274 /* SpaceCatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E86269197AEA54002C6274 /* SpaceCatTests.m */; };
 		41E86275197AF463002C6274 /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E86274197AF463002C6274 /* TitleScene.m */; };
 		41E86278197AF800002C6274 /* GamePlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E86277197AF800002C6274 /* GamePlayScene.m */; };
+		41E8627A197AFCF7002C6274 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 41E86279197AFCF7002C6274 /* Sprites.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		41E86274197AF463002C6274 /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
 		41E86276197AF800002C6274 /* GamePlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlayScene.h; path = ../GamePlayScene.h; sourceTree = "<group>"; };
 		41E86277197AF800002C6274 /* GamePlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamePlayScene.m; path = ../GamePlayScene.m; sourceTree = "<group>"; };
+		41E86279197AFCF7002C6274 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				41E86273197AF463002C6274 /* TitleScene.h */,
 				41E86274197AF463002C6274 /* TitleScene.m */,
 				41E86256197AEA54002C6274 /* Images.xcassets */,
+				41E86279197AFCF7002C6274 /* Sprites.atlas */,
 				41E86240197AEA54002C6274 /* Supporting Files */,
 			);
 			path = SpaceCat;
@@ -244,6 +247,7 @@
 			files = (
 				41E86244197AEA54002C6274 /* InfoPlist.strings in Resources */,
 				41E86257197AEA54002C6274 /* Images.xcassets in Resources */,
+				41E8627A197AFCF7002C6274 /* Sprites.atlas in Resources */,
 				41E8624D197AEA54002C6274 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
