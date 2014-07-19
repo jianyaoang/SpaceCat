@@ -26,6 +26,7 @@
 		41E86278197AF800002C6274 /* GamePlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E86277197AF800002C6274 /* GamePlayScene.m */; };
 		41E8627A197AFCF7002C6274 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 41E86279197AFCF7002C6274 /* Sprites.atlas */; };
 		41E8627D197B0A1F002C6274 /* MachineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E8627C197B0A1F002C6274 /* MachineNode.m */; };
+		41E86280197B14A5002C6274 /* SpaceCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E8627F197B14A5002C6274 /* SpaceCatNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		41E86279197AFCF7002C6274 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		41E8627B197B0A1F002C6274 /* MachineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineNode.h; sourceTree = "<group>"; };
 		41E8627C197B0A1F002C6274 /* MachineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineNode.m; sourceTree = "<group>"; };
+		41E8627E197B14A5002C6274 /* SpaceCatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceCatNode.h; sourceTree = "<group>"; };
+		41E8627F197B14A5002C6274 /* SpaceCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceCatNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 		41E8623F197AEA54002C6274 /* SpaceCat */ = {
 			isa = PBXGroup;
 			children = (
+				41E8627E197B14A5002C6274 /* SpaceCatNode.h */,
+				41E8627F197B14A5002C6274 /* SpaceCatNode.m */,
 				41E8627B197B0A1F002C6274 /* MachineNode.h */,
 				41E8627C197B0A1F002C6274 /* MachineNode.m */,
 				41E86276197AF800002C6274 /* GamePlayScene.h */,
@@ -277,6 +282,7 @@
 				41E86278197AF800002C6274 /* GamePlayScene.m in Sources */,
 				41E8624A197AEA54002C6274 /* AppDelegate.m in Sources */,
 				41E86246197AEA54002C6274 /* main.m in Sources */,
+				41E86280197B14A5002C6274 /* SpaceCatNode.m in Sources */,
 				41E8627D197B0A1F002C6274 /* MachineNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
