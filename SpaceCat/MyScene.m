@@ -16,14 +16,16 @@
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        SKSpriteNode *greenNode = [SKSpriteNode spriteNodeWithColor:[SKColor greenColor] size:CGSizeMake(150, 150)];
+        greenNode.position = CGPointMake(100, 100);
+        greenNode.anchorPoint = CGPointMake(0, 0);
+        [self addChild:greenNode];
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
+        SKSpriteNode *redNode = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(10, 10)];
+        redNode.position = CGPointMake(100, 100);
+        redNode.anchorPoint = CGPointMake(1, 1);
         
-        [self addChild:myLabel];
+        [self addChild:redNode];
     }
     return self;
 }
