@@ -16,7 +16,6 @@
 		41E8624A197AEA54002C6274 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E86249197AEA54002C6274 /* AppDelegate.m */; };
 		41E8624D197AEA54002C6274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E8624B197AEA54002C6274 /* Main.storyboard */; };
 		41E86250197AEA54002C6274 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E8624F197AEA54002C6274 /* ViewController.m */; };
-		41E86253197AEA54002C6274 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E86252197AEA54002C6274 /* MyScene.m */; };
 		41E86255197AEA54002C6274 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E86254197AEA54002C6274 /* Spaceship.png */; };
 		41E86257197AEA54002C6274 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E86256197AEA54002C6274 /* Images.xcassets */; };
 		41E8625E197AEA54002C6274 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E8625D197AEA54002C6274 /* XCTest.framework */; };
@@ -24,6 +23,7 @@
 		41E86260197AEA54002C6274 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E8623B197AEA54002C6274 /* UIKit.framework */; };
 		41E86268197AEA54002C6274 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41E86266197AEA54002C6274 /* InfoPlist.strings */; };
 		41E8626A197AEA54002C6274 /* SpaceCatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E86269197AEA54002C6274 /* SpaceCatTests.m */; };
+		41E86275197AF463002C6274 /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E86274197AF463002C6274 /* TitleScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,6 @@
 		41E8624C197AEA54002C6274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41E8624E197AEA54002C6274 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		41E8624F197AEA54002C6274 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		41E86251197AEA54002C6274 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		41E86252197AEA54002C6274 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		41E86254197AEA54002C6274 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		41E86256197AEA54002C6274 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		41E8625C197AEA54002C6274 /* SpaceCatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceCatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +58,8 @@
 		41E86265197AEA54002C6274 /* SpaceCatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceCatTests-Info.plist"; sourceTree = "<group>"; };
 		41E86267197AEA54002C6274 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41E86269197AEA54002C6274 /* SpaceCatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceCatTests.m; sourceTree = "<group>"; };
+		41E86273197AF463002C6274 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
+		41E86274197AF463002C6274 /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 				41E8624B197AEA54002C6274 /* Main.storyboard */,
 				41E8624E197AEA54002C6274 /* ViewController.h */,
 				41E8624F197AEA54002C6274 /* ViewController.m */,
-				41E86251197AEA54002C6274 /* MyScene.h */,
-				41E86252197AEA54002C6274 /* MyScene.m */,
+				41E86273197AF463002C6274 /* TitleScene.h */,
+				41E86274197AF463002C6274 /* TitleScene.m */,
 				41E86254197AEA54002C6274 /* Spaceship.png */,
 				41E86256197AEA54002C6274 /* Images.xcassets */,
 				41E86240197AEA54002C6274 /* Supporting Files */,
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E86253197AEA54002C6274 /* MyScene.m in Sources */,
+				41E86275197AF463002C6274 /* TitleScene.m in Sources */,
 				41E86250197AEA54002C6274 /* ViewController.m in Sources */,
 				41E8624A197AEA54002C6274 /* AppDelegate.m in Sources */,
 				41E86246197AEA54002C6274 /* main.m in Sources */,
