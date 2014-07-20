@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		415568D6197C7EA800C8A3B9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 415568D5197C7EA800C8A3B9 /* Utils.m */; };
 		41E86238197AEA54002C6274 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E86237197AEA54002C6274 /* Foundation.framework */; };
 		41E8623A197AEA54002C6274 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E86239197AEA54002C6274 /* CoreGraphics.framework */; };
 		41E8623C197AEA54002C6274 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E8623B197AEA54002C6274 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		415568D4197C7EA800C8A3B9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = ../Utils.h; sourceTree = "<group>"; };
+		415568D5197C7EA800C8A3B9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = ../Utils.m; sourceTree = "<group>"; };
 		41E86234197AEA54002C6274 /* SpaceCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E86237197AEA54002C6274 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41E86239197AEA54002C6274 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,6 +146,8 @@
 				41E86277197AF800002C6274 /* GamePlayScene.m */,
 				41E86273197AF463002C6274 /* TitleScene.h */,
 				41E86274197AF463002C6274 /* TitleScene.m */,
+				415568D4197C7EA800C8A3B9 /* Utils.h */,
+				415568D5197C7EA800C8A3B9 /* Utils.m */,
 				41E86256197AEA54002C6274 /* Images.xcassets */,
 				41E86279197AFCF7002C6274 /* Sprites.atlas */,
 				41E86240197AEA54002C6274 /* Supporting Files */,
@@ -282,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415568D6197C7EA800C8A3B9 /* Utils.m in Sources */,
 				41E86275197AF463002C6274 /* TitleScene.m in Sources */,
 				41E86250197AEA54002C6274 /* ViewController.m in Sources */,
 				41E86283197B222C002C6274 /* ProjectileNode.m in Sources */,
@@ -496,6 +502,7 @@
 				41E8626F197AEA54002C6274 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41E86270197AEA54002C6274 /* Build configuration list for PBXNativeTarget "SpaceCatTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				41E86272197AEA54002C6274 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
