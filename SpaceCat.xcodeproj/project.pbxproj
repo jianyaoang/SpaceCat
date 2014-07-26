@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		411B544519841F5F0008AFB7 /* SpaceDogNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B544419841F5F0008AFB7 /* SpaceDogNode.m */; };
 		411B5448198427290008AFB7 /* GroundNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B5447198427290008AFB7 /* GroundNode.m */; };
+		411B5453198457C90008AFB7 /* Damage.caf in Resources */ = {isa = PBXBuildFile; fileRef = 411B544F198457230008AFB7 /* Damage.caf */; };
+		411B5454198457C90008AFB7 /* Explode.caf in Resources */ = {isa = PBXBuildFile; fileRef = 411B5450198457230008AFB7 /* Explode.caf */; };
+		411B5455198457C90008AFB7 /* Laser.caf in Resources */ = {isa = PBXBuildFile; fileRef = 411B5451198457230008AFB7 /* Laser.caf */; };
+		411B5456198457C90008AFB7 /* PressStart.caf in Resources */ = {isa = PBXBuildFile; fileRef = 411B5452198457230008AFB7 /* PressStart.caf */; };
 		415568D6197C7EA800C8A3B9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 415568D5197C7EA800C8A3B9 /* Utils.m */; };
 		41E86238197AEA54002C6274 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E86237197AEA54002C6274 /* Foundation.framework */; };
 		41E8623A197AEA54002C6274 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E86239197AEA54002C6274 /* CoreGraphics.framework */; };
@@ -48,6 +52,10 @@
 		411B544419841F5F0008AFB7 /* SpaceDogNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpaceDogNode.m; path = ../SpaceDogNode.m; sourceTree = "<group>"; };
 		411B5446198427290008AFB7 /* GroundNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundNode.h; sourceTree = "<group>"; };
 		411B5447198427290008AFB7 /* GroundNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroundNode.m; sourceTree = "<group>"; };
+		411B544F198457230008AFB7 /* Damage.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Damage.caf; sourceTree = "<group>"; };
+		411B5450198457230008AFB7 /* Explode.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Explode.caf; sourceTree = "<group>"; };
+		411B5451198457230008AFB7 /* Laser.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Laser.caf; sourceTree = "<group>"; };
+		411B5452198457230008AFB7 /* PressStart.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart.caf; sourceTree = "<group>"; };
 		415568D4197C7EA800C8A3B9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = ../Utils.h; sourceTree = "<group>"; };
 		415568D5197C7EA800C8A3B9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = ../Utils.m; sourceTree = "<group>"; };
 		41E86234197AEA54002C6274 /* SpaceCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +133,17 @@
 			name = Node;
 			sourceTree = "<group>";
 		};
+		411B544A198454C10008AFB7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				411B544F198457230008AFB7 /* Damage.caf */,
+				411B5450198457230008AFB7 /* Explode.caf */,
+				411B5451198457230008AFB7 /* Laser.caf */,
+				411B5452198457230008AFB7 /* PressStart.caf */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		41E8622B197AEA54002C6274 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +178,7 @@
 		41E8623F197AEA54002C6274 /* SpaceCat */ = {
 			isa = PBXGroup;
 			children = (
+				411B544A198454C10008AFB7 /* Sounds */,
 				411B54491984282D0008AFB7 /* Node */,
 				41E86276197AF800002C6274 /* GamePlayScene.h */,
 				41E86277197AF800002C6274 /* GamePlayScene.m */,
@@ -283,6 +303,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411B5453198457C90008AFB7 /* Damage.caf in Resources */,
+				411B5454198457C90008AFB7 /* Explode.caf in Resources */,
+				411B5455198457C90008AFB7 /* Laser.caf in Resources */,
+				411B5456198457C90008AFB7 /* PressStart.caf in Resources */,
 				41E86244197AEA54002C6274 /* InfoPlist.strings in Resources */,
 				41E86257197AEA54002C6274 /* Images.xcassets in Resources */,
 				41E8627A197AFCF7002C6274 /* Sprites.atlas in Resources */,
