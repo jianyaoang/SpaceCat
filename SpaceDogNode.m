@@ -7,6 +7,7 @@
 //
 
 #import "SpaceDogNode.h"
+#import "Utils.h"
 
 @implementation SpaceDogNode
 
@@ -47,6 +48,12 @@
     self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
     self.physicsBody.affectedByGravity = NO;
     self.physicsBody.velocity = CGVectorMake(0, -50);
+
+    self.physicsBody.categoryBitMask = CollisionCategoryEnemy;
+    self.physicsBody.collisionBitMask = 0;
+    
+    //0010 | 1000 = 1010
+    self.physicsBody.contactTestBitMask = CollisionCategoryProjectile | CollisionCategoryGround;
 }
 
 @end

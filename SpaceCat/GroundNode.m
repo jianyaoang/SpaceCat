@@ -7,6 +7,7 @@
 //
 
 #import "GroundNode.h"
+#import "Utils.h"
 
 @implementation GroundNode
 
@@ -26,5 +27,9 @@
     
     //stating that physics has no effect on it
     self.physicsBody.dynamic = NO;
+    
+    self.physicsBody.categoryBitMask = CollisionCategoryGround;
+    self.physicsBody.collisionBitMask = CollisionCategoryDebris;
+    self.physicsBody.contactTestBitMask = CollisionCategoryEnemy;
 }
 @end

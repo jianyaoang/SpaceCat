@@ -10,6 +10,17 @@
 
 static const int ProjectileSpeed = 400;
 
+typedef NS_OPTIONS(NSUInteger, CollisionCategory)
+{
+    CollisionCategoryEnemy      = 1 << 0, //0000
+    CollisionCategoryProjectile = 1 << 1, //0010
+    CollisionCategoryDebris     = 1 << 2, //0100
+    CollisionCategoryGround     = 1 << 3  //1000
+};
+
+
+
+
 @interface Utils : NSObject
 
 @end
