@@ -19,8 +19,9 @@ typedef NS_OPTIONS(NSUInteger, CollisionCategory)
 };
 
 
-
-
 @interface Utils : NSObject
+
++(NSInteger)randomWithMin:(NSInteger)min max:(NSInteger)max;
+
 
 @end
