@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411B544519841F5F0008AFB7 /* SpaceDogNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B544419841F5F0008AFB7 /* SpaceDogNode.m */; };
 		415568D6197C7EA800C8A3B9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 415568D5197C7EA800C8A3B9 /* Utils.m */; };
 		41E86238197AEA54002C6274 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E86237197AEA54002C6274 /* Foundation.framework */; };
 		41E8623A197AEA54002C6274 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E86239197AEA54002C6274 /* CoreGraphics.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		411B544319841F5F0008AFB7 /* SpaceDogNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpaceDogNode.h; path = ../SpaceDogNode.h; sourceTree = "<group>"; };
+		411B544419841F5F0008AFB7 /* SpaceDogNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpaceDogNode.m; path = ../SpaceDogNode.m; sourceTree = "<group>"; };
 		415568D4197C7EA800C8A3B9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = ../Utils.h; sourceTree = "<group>"; };
 		415568D5197C7EA800C8A3B9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = ../Utils.m; sourceTree = "<group>"; };
 		41E86234197AEA54002C6274 /* SpaceCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +143,8 @@
 				41E86282197B222C002C6274 /* ProjectileNode.m */,
 				41E8627E197B14A5002C6274 /* SpaceCatNode.h */,
 				41E8627F197B14A5002C6274 /* SpaceCatNode.m */,
+				411B544319841F5F0008AFB7 /* SpaceDogNode.h */,
+				411B544419841F5F0008AFB7 /* SpaceDogNode.m */,
 				41E8627B197B0A1F002C6274 /* MachineNode.h */,
 				41E8627C197B0A1F002C6274 /* MachineNode.m */,
 				41E86276197AF800002C6274 /* GamePlayScene.h */,
@@ -292,6 +297,7 @@
 				41E86250197AEA54002C6274 /* ViewController.m in Sources */,
 				41E86283197B222C002C6274 /* ProjectileNode.m in Sources */,
 				41E86278197AF800002C6274 /* GamePlayScene.m in Sources */,
+				411B544519841F5F0008AFB7 /* SpaceDogNode.m in Sources */,
 				41E8624A197AEA54002C6274 /* AppDelegate.m in Sources */,
 				41E86246197AEA54002C6274 /* main.m in Sources */,
 				41E86280197B14A5002C6274 /* SpaceCatNode.m in Sources */,
