@@ -14,9 +14,17 @@
 {
     GroundNode *ground = [self spriteNodeWithColor:[SKColor greenColor] size:size];
     ground.name = @"Ground";
-    ground.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:size];
     ground.position = CGPointMake(size.width/2, size.height/2);
-    ground.physicsBody.affectedByGravity = NO;
+    [ground setupPhysicsBody];
     return  ground;
+}
+
+-(void)setupPhysicsBody
+{
+    self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
+    self.physicsBody.affectedByGravity = NO;
+    
+    //stating that physics has no effect on it
+    self.physicsBody.dynamic = NO;
 }
 @end
