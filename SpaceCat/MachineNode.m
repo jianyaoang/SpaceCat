@@ -15,6 +15,7 @@
     MachineNode *machine = [self spriteNodeWithImageNamed:@"machine_1"];
     //center on the x-axis, 12 above the y
     machine.position = position;
+    machine.zPosition = 8;
     machine.anchorPoint = CGPointMake(0.5, 0);
     machine.name = @"Machine";
     

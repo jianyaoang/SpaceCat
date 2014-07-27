@@ -30,6 +30,7 @@
 @property (nonatomic) BOOL gameOver;
 @property (nonatomic) BOOL restart;
 @property (nonatomic) BOOL gameOverdisplayed;
+@property (nonatomic) AVAudioPlayer *gameOverMusic;
 @end
 
 @implementation GamePlayScene
@@ -92,6 +93,11 @@
     self.backgroundMusic.numberOfLoops = -1;  // number of loops -1 = infinite
     [self.backgroundMusic prepareToPlay];
     
+    NSURL *gameOverURL= [[NSBundle mainBundle] URLForResource:@"GameOver" withExtension:@"mp3"];
+    self.gameOverMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:gameOverURL error:nil];
+    self.gameOverMusic.numberOfLoops = 1;  // number of loops -1 = infinite
+    [self.gameOverMusic prepareToPlay];
+    
     self.laserSound = [SKAction playSoundFileNamed:@"Laser.caf" waitForCompletion:NO];
     self.damageSound = [SKAction playSoundFileNamed:@"Damage.caf" waitForCompletion:NO];
     self.explodeSound = [SKAction playSoundFileNamed:@"Explode.caf" waitForCompletion:NO];
@@ -126,6 +132,10 @@
     [self addChild:gameOver];
     self.restart = YES;
     self.gameOverdisplayed = YES;
+    [gameOver performAnimation];
+    
+    [self.backgroundMusic stop];
+    [self.gameOverMusic play];
 }
 
 -(void) shootProjectileTowardsPosition:(CGPoint)position

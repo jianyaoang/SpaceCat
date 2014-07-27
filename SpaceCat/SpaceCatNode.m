@@ -19,6 +19,7 @@
     SpaceCatNode *spaceCat = [self spriteNodeWithImageNamed:@"spacecat_1"];
     //center on the x-axis, 12 above the y
     spaceCat.position = position;
+    spaceCat.zPosition = 9;
     spaceCat.anchorPoint = CGPointMake(0.5, 0);
     
     //giving spaceCat a unique name
