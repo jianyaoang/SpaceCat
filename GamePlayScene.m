@@ -14,6 +14,7 @@
 #import "GroundNode.h"
 #import "Utils.h"
 #import <AVFoundation/AVFoundation.h>
+#import "HUDNode.h"
 
 @interface GamePlayScene ()
 @property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
@@ -65,6 +66,9 @@
         
         [self setupSoundEffect];
         
+        //-20 right below from the top
+        HUDNode *hud = [HUDNode hudAtPosition:CGPointMake(0, self.frame.size.height - 20) frame:self.frame];
+        [self addChild:hud];
     }
     return self;
 }
