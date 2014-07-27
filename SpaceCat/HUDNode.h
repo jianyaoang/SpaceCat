@@ -13,5 +13,6 @@
 @property (nonatomic) NSInteger score;
 
 +(instancetype)hudAtPosition:(CGPoint)position frame:(CGRect)frame;
+-(void)addPoints:(NSInteger)points;
 
 @end

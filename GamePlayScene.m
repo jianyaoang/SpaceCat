@@ -208,6 +208,8 @@
         SpaceDogNode *spaceDog = (SpaceDogNode*)firstBody.node;
         ProjectileNode *projectile = (ProjectileNode*)secondBody.node;
         
+        [self addPoints:PointsPerHit];
+        
         //when it collides, remove it from game
         [spaceDog removeFromParent];
         [projectile removeFromParent];
@@ -262,6 +264,12 @@
             [explosion removeFromParent];
         }];
     }
+}
+
+-(void)addPoints:(NSInteger)points
+{
+    HUDNode *hud = (HUDNode*)[self childNodeWithName:@"HUD"];
+    [hud addPoints:points];
 }
 
 

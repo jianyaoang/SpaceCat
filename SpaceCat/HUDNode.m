@@ -16,6 +16,7 @@
     HUDNode *hud = [self node];
     hud.position = position;
     hud.zPosition = 10;
+    hud.name = @"HUD";
     
     SKSpriteNode *catHead = [SKSpriteNode spriteNodeWithImageNamed:@"HUD_cat_1"];
     catHead.position = CGPointMake(30, -10);
@@ -52,6 +53,15 @@
     
     
     return hud;
+}
+
+-(void)addPoints:(NSInteger)points
+{
+    self.score += points;
+    
+    //have to typecast as it returns type id
+    SKLabelNode *scoreLabel = (SKLabelNode*)[self childNodeWithName:@"Score"];
+    scoreLabel.text = [NSString stringWithFormat:@"%d",self.score];
 }
 
 
