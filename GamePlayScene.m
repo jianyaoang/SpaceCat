@@ -224,9 +224,10 @@
         SpaceDogNode *spaceDog = (SpaceDogNode*)firstBody.node;
         [spaceDog removeFromParent];
         [self runAction:self.damageSound];
+        
+        [self loseLife];
     }
     [self createDebrisAtPosition:contact.contactPoint];
-    
 }
 
 -(void)createDebrisAtPosition:(CGPoint)position
@@ -270,6 +271,12 @@
 {
     HUDNode *hud = (HUDNode*)[self childNodeWithName:@"HUD"];
     [hud addPoints:points];
+}
+
+-(void)loseLife
+{
+    HUDNode *hud = (HUDNode*)[self childNodeWithName:@"HUD"];
+    [hud loseLife];
 }
 
 

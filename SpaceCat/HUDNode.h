@@ -14,5 +14,6 @@
 
 +(instancetype)hudAtPosition:(CGPoint)position frame:(CGRect)frame;
 -(void)addPoints:(NSInteger)points;
+-(BOOL)loseLife;
 
 @end

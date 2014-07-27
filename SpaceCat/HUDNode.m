@@ -64,5 +64,17 @@
     scoreLabel.text = [NSString stringWithFormat:@"%d",self.score];
 }
 
+-(BOOL)loseLife
+{
+    if (self.lives > 0)
+    {
+        NSString *lifeNodeName = [NSString stringWithFormat:@"Life%d",self.lives];
+        SKNode *lifeToRemove = [self childNodeWithName:lifeNodeName];
+        [lifeToRemove removeFromParent];
+        self.lives--;
+    }
+    return self.lives == 0;
+}
+
 
 @end
